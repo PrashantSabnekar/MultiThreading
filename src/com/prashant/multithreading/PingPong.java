@@ -76,7 +76,6 @@ public class PingPong {
         pongThread.exit();
 
         sleep(5000);
-
     }
 
     public static void main(String args[]) throws InterruptedException {
