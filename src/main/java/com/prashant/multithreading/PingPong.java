@@ -12,8 +12,8 @@ public class PingPong {
 
     public void demo() throws InterruptedException {
 
-        Semaphore ping = new Semaphore(0);
-        Semaphore pong = new Semaphore(0);
+        final Semaphore ping = new Semaphore(0);
+        final Semaphore pong = new Semaphore(0);
 
         class Ping implements Runnable {
             private volatile long counter = 0L;
@@ -61,8 +61,8 @@ public class PingPong {
             }
         }
 
-        Ping pingThread = new Ping();
-        Pong pongThread = new Pong();
+        final Ping pingThread = new Ping();
+        final Pong pongThread = new Pong();
 
         Thread t1 = new Thread(pingThread);
         Thread t2 = new Thread(pongThread);
