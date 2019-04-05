@@ -10,6 +10,7 @@ import static java.lang.Thread.sleep;
  */
 public class PingPong {
 
+    //test
     public void demo() throws InterruptedException {
 
         final Semaphore ping = new Semaphore(0);
